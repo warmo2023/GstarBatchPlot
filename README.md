@@ -1,2 +1,22 @@
 # GstarCAD-Batch-Plot
-浩辰cad批量打印工具，或许是mesteel批量打印的一个工具
+伟财WEICAI批量打印：主要适配浩辰cad批量打印，或许是替代mesteel批量打印的一个工具
+
+伟财WEICAI批量打印
+
+加载方式：
+1. 启动浩辰 CAD 2026。
+2. 在命令行输入 NETLOAD。
+3. 选择本目录中的 GcadBatchPlot.dll。
+4. 加载后输入 ZBP_SHOW_PANEL 打开批量打印面板。
+
+常用命令：
+ZBP_SHOW_PANEL              图框块批量打印
+ZBP_RECTANGLE_BATCH_PLOT    矩形范围批量打印
+ZBP_SINGLE_PLOT             单张打印
+ZBP_SETTINGS                设置
+ZBP_INSTALL_AUTOLOAD        安装自动加载
+
+说明：
+- 本插件针对浩辰 CAD 2026 的 .NET 8 API 编译，平台为 x64。
+- 首次加载建议在空白图纸中测试；打印机和 PC5 配置需按本机浩辰环境确认。
+- 若 NETLOAD 提示程序集被阻止，请在 DLL 属性中勾选“解除锁定”，或把整个文件夹复制到本机目录后再加载。
